@@ -16,12 +16,17 @@
 		00B784B60FF439BC000DE1D7 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B20FF439BC000DE1D7 /* CoreAudio.framework */; };
 		00B9955A1B128DF400A5C623 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B995581B128DF400A5C623 /* IOKit.framework */; };
 		00B9955B1B128DF400A5C623 /* IOSurface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B995591B128DF400A5C623 /* IOSurface.framework */; };
+		45580B69ED834707B6B864D1 /* Yolo9KTestApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8AD1CF1E568941CA85485916 /* Yolo9KTestApp.cpp */; };
+		496B0008228F3E3A00F67610 /* YOLO9000.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 496B0005228F3E3A00F67610 /* YOLO9000.mlmodel */; };
+		496B000B228F3E4700F67610 /* Tree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 496B0009228F3E4700F67610 /* Tree.cpp */; };
+		496B000C228F3E4700F67610 /* YoloHandler.mm in Sources */ = {isa = PBXBuildFile; fileRef = 496B000A228F3E4700F67610 /* YoloHandler.mm */; };
+		496B000F228F450900F67610 /* yolo9k.txt in Resources */ = {isa = PBXBuildFile; fileRef = 496B000D228F450900F67610 /* yolo9k.txt */; };
+		496B0010228F450900F67610 /* yolo9k.tree in Resources */ = {isa = PBXBuildFile; fileRef = 496B000E228F450900F67610 /* yolo9k.tree */; };
+		496B0012228F599A00F67610 /* Vision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 496B0011228F599A00F67610 /* Vision.framework */; };
+		496B0014228F59A000F67610 /* CoreML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 496B0013228F59A000F67610 /* CoreML.framework */; };
 		5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B10EAFCA74003A9687 /* CoreVideo.framework */; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
-		3DB2465CE8534B8D9690CD08 /* Yolo9KTest_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 2BB2AB5FCF374FB3AB9EFB1C /* Yolo9KTest_Prefix.pch */; };
 		ED296A86289C477D9A637BF1 /* CinderApp.icns in Resources */ = {isa = PBXBuildFile; fileRef = 703B3D128A8C46598E8D7227 /* CinderApp.icns */; };
-		1AB2284116FE45E2BB1968C6 /* Resources.h in Headers */ = {isa = PBXBuildFile; fileRef = 566CE28B1DC84E8BAB40AF77 /* Resources.h */; };
-		45580B69ED834707B6B864D1 /* Yolo9KTestApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8AD1CF1E568941CA85485916 /* Yolo9KTestApp.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,13 +42,22 @@
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		2BB2AB5FCF374FB3AB9EFB1C /* Yolo9KTest_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = Yolo9KTest_Prefix.pch; sourceTree = "<group>"; };
+		496B0005228F3E3A00F67610 /* YOLO9000.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = YOLO9000.mlmodel; path = ../include/YOLO9000.mlmodel; sourceTree = "<group>"; };
+		496B0006228F3E3A00F67610 /* Tree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tree.h; path = ../include/Tree.h; sourceTree = "<group>"; };
+		496B0007228F3E3A00F67610 /* YoloHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YoloHandler.h; path = ../include/YoloHandler.h; sourceTree = "<group>"; };
+		496B0009228F3E4700F67610 /* Tree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Tree.cpp; path = ../src/Tree.cpp; sourceTree = "<group>"; };
+		496B000A228F3E4700F67610 /* YoloHandler.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = YoloHandler.mm; path = ../src/YoloHandler.mm; sourceTree = "<group>"; };
+		496B000D228F450900F67610 /* yolo9k.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = yolo9k.txt; path = ../resources/yolo9k.txt; sourceTree = "<group>"; };
+		496B000E228F450900F67610 /* yolo9k.tree */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = yolo9k.tree; path = ../resources/yolo9k.tree; sourceTree = "<group>"; };
+		496B0011228F599A00F67610 /* Vision.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Vision.framework; path = System/Library/Frameworks/Vision.framework; sourceTree = SDKROOT; };
+		496B0013228F59A000F67610 /* CoreML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreML.framework; path = System/Library/Frameworks/CoreML.framework; sourceTree = SDKROOT; };
 		5323E6B10EAFCA74003A9687 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
+		566CE28B1DC84E8BAB40AF77 /* Resources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Resources.h; path = ../include/Resources.h; sourceTree = "<group>"; };
+		703B3D128A8C46598E8D7227 /* CinderApp.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = CinderApp.icns; path = ../resources/CinderApp.icns; sourceTree = "<group>"; };
+		81AD6138FD134ECDBABFC9F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AD1CF1E568941CA85485916 /* Yolo9KTestApp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = Yolo9KTestApp.cpp; path = ../src/Yolo9KTestApp.cpp; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Yolo9KTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yolo9KTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8AD1CF1E568941CA85485916 /* Yolo9KTestApp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = ../src/Yolo9KTestApp.cpp; sourceTree = "<group>"; name = Yolo9KTestApp.cpp; };
-		566CE28B1DC84E8BAB40AF77 /* Resources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ../include/Resources.h; sourceTree = "<group>"; name = Resources.h; };
-		703B3D128A8C46598E8D7227 /* CinderApp.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = ../resources/CinderApp.icns; sourceTree = "<group>"; name = CinderApp.icns; };
-		81AD6138FD134ECDBABFC9F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; name = Info.plist; };
-		2BB2AB5FCF374FB3AB9EFB1C /* Yolo9KTest_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = Yolo9KTest_Prefix.pch; sourceTree = "<group>"; name = Yolo9KTest_Prefix.pch; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +65,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				496B0014228F59A000F67610 /* CoreML.framework in Frameworks */,
+				496B0012228F599A00F67610 /* Vision.framework in Frameworks */,
 				006D720419952D00008149E2 /* AVFoundation.framework in Frameworks */,
 				006D720519952D00008149E2 /* CoreMedia.framework in Frameworks */,
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
@@ -68,9 +84,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01B97315FEAEA392516A2CEA /* Blocks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Blocks;
+			sourceTree = "<group>";
+		};
 		080E96DDFE201D6D7F000001 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				496B0009228F3E4700F67610 /* Tree.cpp */,
+				496B000A228F3E4700F67610 /* YoloHandler.mm */,
 				8AD1CF1E568941CA85485916 /* Yolo9KTestApp.cpp */,
 			);
 			name = Source;
@@ -124,16 +149,12 @@
 			name = Yolo9KTest;
 			sourceTree = "<group>";
 		};
-		01B97315FEAEA392516A2CEA /* Blocks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Blocks;
-			sourceTree = "<group>";
-		};
 		29B97315FDCFA39411CA2CEA /* Headers */ = {
 			isa = PBXGroup;
 			children = (
+				496B0006228F3E3A00F67610 /* Tree.h */,
+				496B0005228F3E3A00F67610 /* YOLO9000.mlmodel */,
+				496B0007228F3E3A00F67610 /* YoloHandler.h */,
 				566CE28B1DC84E8BAB40AF77 /* Resources.h */,
 				2BB2AB5FCF374FB3AB9EFB1C /* Yolo9KTest_Prefix.pch */,
 			);
@@ -143,6 +164,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				496B000E228F450900F67610 /* yolo9k.tree */,
+				496B000D228F450900F67610 /* yolo9k.txt */,
 				703B3D128A8C46598E8D7227 /* CinderApp.icns */,
 				81AD6138FD134ECDBABFC9F4 /* Info.plist */,
 			);
@@ -152,6 +175,8 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				496B0013228F59A000F67610 /* CoreML.framework */,
+				496B0011228F599A00F67610 /* Vision.framework */,
 				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
 			);
@@ -184,6 +209,8 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Yolo9KTest" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -208,7 +235,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				496B0010228F450900F67610 /* yolo9k.tree in Resources */,
 				ED296A86289C477D9A637BF1 /* CinderApp.icns in Resources */,
+				496B000F228F450900F67610 /* yolo9k.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,7 +248,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				496B000B228F3E4700F67610 /* Tree.cpp in Sources */,
+				496B0008228F3E3A00F67610 /* YOLO9000.mlmodel in Sources */,
 				45580B69ED834707B6B864D1 /* Yolo9KTestApp.cpp in Sources */,
+				496B000C228F3E4700F67610 /* YoloHandler.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,17 +262,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				DEAD_CODE_STRIPPING = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Yolo9KTest_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Yolo9KTest_Prefix.pch;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
@@ -262,12 +294,12 @@
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
 				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Yolo9KTest_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"NDEBUG=1",
 					"$(inherited)",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Yolo9KTest_Prefix.pch;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
@@ -284,7 +316,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CINDER_PATH = "../../Cinder";
+				CINDER_PATH = ../../Cinder;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
 				CLANG_CXX_LIBRARY = "libc++";
 				ENABLE_TESTABILITY = YES;
@@ -302,7 +334,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CINDER_PATH = "../../Cinder";
+				CINDER_PATH = ../../Cinder;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
 				CLANG_CXX_LIBRARY = "libc++";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
